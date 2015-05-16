@@ -21,6 +21,7 @@ note: library: c
 note: library: m
 ```
 
-Once the library is build, it is present as `capi/target/debug/libembed_capi-<hash>.a` (or in `capi/target/release`if built with `cargo build --release`).
+Once the library is build, it is present as `capi/target/debug/libembed_capi.a` (or in `capi/target/release`if built with `cargo build --release`).
 
 The `capi/c_test` contains an example C program that links to this library.
+Build it by issuing `make`

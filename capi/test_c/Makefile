@@ -1,5 +1,9 @@
+CC=gcc
+CFLAGS=-Wall -I..
+LIBS=-L../target/debug -lembed_capi
+
 all:
-	gcc -Wall -o main main.c -I.. -L../target/debug -lembed_capi-8eb1b52d727c7d0c  -lSystem -lpthread -lc -lm
+	$(CC) $(CFLAGS) -o main main.c $(LIBS)
 
 clean:
 	rm -f main
